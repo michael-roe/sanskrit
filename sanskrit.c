@@ -158,6 +158,9 @@ int len;
 	case 0x1e37: /* l with dot below */
 	  vowel(0x90c, 0x962);
 	  break;
+	case 0x1e39: /* l with dot below and macron */
+	  vowel(0x961, 0x963);
+	  break;
 	case 0x1e43: /* m with dot below */
 	  wprintf(L"%lc", 0x902); /* anusvara */
 	  break;
