@@ -180,7 +180,7 @@ int len;
 	  }
 	  break;
 	case 'c':
-	  if (cp[1] == 'c')
+	  if (cp[1] == 'h')
 	  {
 	    consonant(0x91b);
 	    cp++;
@@ -318,6 +318,12 @@ int len;
 	case 's':
 	  consonant(0x938);
 	  break;
+        case 'z': /* Used for loanwords in Hindi */
+          consonant(0x95b);
+          break;
+        case 0x970: /* Devanagari abbreviation sign */
+          wprintf(L"%lc", (int) *cp);
+          break;
 	default:
           wprintf(L"%lc", *cp);
 	  if (*cp > 255)
